@@ -1,4 +1,4 @@
-[ -f /var/lib/mysql/auto.cnf ] || suexec sudo -u "$PUSER" mariadbd --bootstrap --skip-grant-tables <<-EOF || exit $?
+[ -f /var/lib/mysql/auto.cnf ] || suexec sudo -E -u "$PUSER" mariadbd --bootstrap --skip-grant-tables <<-EOF || exit $?
 	CREATE DATABASE IF NOT EXISTS mysql;
 	USE mysql;
 	$(cat /usr/share/mariadb/mariadb_system_tables.sql)
@@ -10,5 +10,5 @@
 	$(cat /usr/share/mariadb/init.sql)
 EOF
 
-suexec sudo -u "$PUSER" mariadbd --skip-name-resolve &
+suexec sudo -E -u "$PUSER" mariadbd --skip-name-resolve &
 
