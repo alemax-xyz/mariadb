@@ -1,3 +1,0 @@
-[mysqld]
-require_secure_transport=OFF
-tls_version=
