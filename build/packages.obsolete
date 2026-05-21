@@ -1,0 +1,16 @@
+adduser
+debconf
+init-system-helpers
+openssl
+systemd
+perl
+perl:any
+libdbi-perl
+procps
+psmisc
+gawk
+iproute2
+debianutils
+rsync
+socat
+lsof
