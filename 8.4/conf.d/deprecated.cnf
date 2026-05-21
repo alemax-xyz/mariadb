@@ -1,0 +1,3 @@
+[mysqld]
+explicit_defaults_for_timestamp=1
+log_error_suppression_list=MY-010068,MY-010069,MY-011068,MY-013595,MY-013360,MY-013907,MY-010454
