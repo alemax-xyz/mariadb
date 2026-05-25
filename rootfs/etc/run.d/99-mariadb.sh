@@ -12,5 +12,5 @@
 	)
 EOF
 
-suexec sudo -E -u "$PUSER" mariadbd --skip-name-resolve &
+suexec sudo -E -u "$PUSER" mariadbd &
 
