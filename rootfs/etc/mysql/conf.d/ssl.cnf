@@ -1,3 +1,0 @@
-[mysqld]
-ssl=0
-tls_version=''
